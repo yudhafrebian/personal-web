@@ -17,7 +17,6 @@ export default function ExperienceSection() {
       </h1>
 
       <div className="flex lg:flex-row flex-col justify-center lg:gap-12 gap-6">
-        {/* UI/UX Designer Card */}
         <Card className="lg:w-cardmd2 lg:h-cardmd2 lg:p-8 p-4 bg-card">
           <CardHeader className="text-center">
             <CardTitle className="m-auto">
@@ -57,7 +56,7 @@ export default function ExperienceSection() {
                 and improve designs.
               </li>
               <li className="mb-1">
-                Ensuring design consistency with the company's branding and
+                Ensuring design consistency with the company&apos;s branding and
                 industry standards.
               </li>
               <li>
@@ -68,7 +67,6 @@ export default function ExperienceSection() {
           </CardContent>
         </Card>
 
-        {/* Front-End Developer Card */}
         <Card className="lg:w-cardmd2 lg:h-cardmd2 lg:p-8 p-4 bg-card">
           <CardHeader className="text-center">
             <CardTitle className="m-auto">
