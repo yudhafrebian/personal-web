@@ -58,6 +58,7 @@ export default {
       },
       letterSpacing: {
         custom: "20px",
+        sm: "10px",
       },
       height: {
         custom1: "710px",
@@ -66,12 +67,12 @@ export default {
         skills: "467px",
         portofolio: "925px",
         exp: "781px", 
-        testi: "580px", 
+        testi: "880px", 
         contact: "620px", 
         cardmd: "154px",
         cardmd2: "514px",
         cardlg: "246px",
-        cardxl: "659px",
+        cardxl: "680px",
       },
       width: {
         custom1: "700px",

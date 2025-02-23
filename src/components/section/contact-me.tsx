@@ -7,55 +7,98 @@ export default function ContactMeSection() {
   return (
     <section
       id="contact-me"
-      className="flex flex-col h-contact bg-gradient-to-br from-gray-700 to-zinc-900 p-24"
+      className="flex flex-col bg-gradient-to-br from-gray-700 to-zinc-900 lg:p-24 p-8"
     >
-      <h1 className="font-montserrat font-bold text-3xl text-white underline text-center mb-9">
+      <h1 className="font-montserrat font-bold lg:text-3xl text-xl text-white underline text-center mb-9">
         Contact Me
       </h1>
       <form
         action="https://formspree.io/f/mjkglyod"
         method="POST"
-        className="flex flex-col justify-center w-custom1 mx-auto outline rounded-md outline-white  p-8"
+        className="flex flex-col justify-center mx-auto outline rounded-md outline-white lg:p-8 p-4"
       >
-        <div className="flex justify-between gap-8">
-          <div className="w-72">
-            <Label htmlFor="name">Name</Label>
-            <Input name="name" type="text" placeholder="Input Your Name Here" required/>
-          </div>
-          <div className="w-72">
-            <Label htmlFor="email">Email</Label>
+  
+        <div className="flex lg:flex-row flex-col justify-between lg:gap-8 gap-4">
+          <div className="lg:w-72 w-60">
+            <Label className="lg:text-sm text-xs" htmlFor="name">
+              Name
+            </Label>
             <Input
+              className="lg:placeholder:text-sm placeholder:text-xs"
+              id="name"
+              name="name"
+              type="text"
+              placeholder="What's your name?"
+              required
+              autoComplete="name"
+              aria-label="Your name"
+            />
+          </div>
+          <div className="lg:w-72 w-60">
+            <Label className="lg:text-sm text-xs" htmlFor="email">
+              Email
+            </Label>
+            <Input
+              className="lg:placeholder:text-sm placeholder:text-xs"
+              id="email"
               name="email"
               type="email"
-              placeholder="Input Your Email Here"
+              placeholder="Your email address"
               required
+              autoComplete="email"
+              aria-label="Your email"
             />
           </div>
         </div>
-        <div className="flex justify-between gap-8 mt-6">
-          <div className="w-72">
-            <Label htmlFor="phone">Phone</Label>
+
+        <div className="flex lg:flex-row flex-col justify-between lg:gap-8 gap-4 lg:mt-6 mt-4">
+          <div className="lg:w-72 w-60">
+            <Label className="lg:text-sm text-xs" htmlFor="phone">
+              Phone <span className="text-gray-400">(optional)</span>
+            </Label>
             <Input
+              className="lg:placeholder:text-sm placeholder:text-xs"
+              id="phone"
               name="phone"
-              type="number"
-              placeholder="Input Your Phone Number Here"
+              type="tel"
+              placeholder="Your contact number"
+              autoComplete="tel"
+              aria-label="Your phone number"
             />
           </div>
-          <div className="w-72">
-            <Label htmlFor="subject">Subject</Label>
+          <div className="lg:w-72 w-60">
+            <Label className="lg:text-sm text-xs" htmlFor="subject">
+              Subject
+            </Label>
             <Input
+              className="lg:placeholder:text-sm placeholder:text-xs"
+              id="subject"
               name="subject"
               type="text"
-              placeholder="Input Your Subject Here"
+              placeholder="What's this about?"
+              aria-label="Subject of your message"
             />
           </div>
         </div>
+
         <div className="mt-6">
-          <Label htmlFor="message">Message</Label>
-          <Textarea name="message" placeholder="Input Your Message Here"/>
+          <Label className="lg:text-sm text-xs" htmlFor="message">
+            Message
+          </Label>
+          <Textarea
+            className="lg:placeholder:text-sm placeholder:text-xs"
+            id="message"
+            name="message"
+            placeholder="Tell me more about your project or idea..."
+            required
+            aria-label="Your message"
+          />
         </div>
+
         <div className="mx-auto mt-6">
-          <Button type="submit">Submit</Button>
+          <Button type="submit" aria-label="Submit your message">
+            Submit
+          </Button>
         </div>
       </form>
     </section>

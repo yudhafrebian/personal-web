@@ -8,6 +8,7 @@ html {
 
 body {
   font-family: var(--font-montserrat), sans-serif;
+  overflow-x: hidden;
 }
 
 .roboto {
@@ -73,6 +74,59 @@ body {
 @layer base {
   * {
     @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .grid-areas-layout {
+    display: grid;
+    grid-template-areas:
+      "card-1 card-1 card-2 card-5"
+      "card-3 card-4 card-4 card-5";
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 288px);
+    gap: 1rem;
+  }
+
+  .grid-areas-layout-mobile {
+    display: grid;
+    grid-template-areas:
+      "card-1 card-1"
+      "card-2 card-3"
+      "card-4 card-4"
+      "card-5 card-5";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 1rem;
+  }
+
+  .grid-card-1 {
+    grid-area: card-1;
+  }
+
+  .grid-card-2 {
+    grid-area: card-2;
+  }
+
+  .grid-card-3 {
+    grid-area: card-3;
+  }
+
+  .grid-card-4 {
+    grid-area: card-4;
+  }
+
+  .grid-card-5 {
+    grid-area: card-5;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
   }
   body {
     @apply bg-background text-foreground;
