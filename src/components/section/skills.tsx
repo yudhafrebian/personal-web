@@ -2,7 +2,9 @@ import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
 import { LiaLaptopCodeSolid } from "react-icons/lia";
 import { FiDatabase } from "react-icons/fi";
 import { IoIosColorPalette } from "react-icons/io";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub, FaHtml5, FaCss3Alt, FaReact, FaNode, FaFigma, FaGithubAlt } from "react-icons/fa";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { SiNextdotjs, SiExpress } from "react-icons/si";
 
 export default function SkillsSection() {
   return (
@@ -25,10 +27,11 @@ export default function SkillsSection() {
             <CardContent className="text-slate-700 font-medium">
               <p>Technologies Used:</p>
               <div className="flex items-center gap-2 lg:my-4 my-2">
-                <img className="lg:w-12 lg:h-12 w-10 h-10" src="/assets/Html 5.png" alt="HTML5 Logo" />
-                <img className="lg:w-12 lg:h-12 w-10 h-10" src="/assets/CSS3.png" alt="CSS3 Logo" />
-                <img className="lg:w-12 lg:h-12 w-10 h-10" src="/assets/React Native.png" alt="React Native Logo" />
-                <img className="lg:h-5 h-4" src="/assets/Next.js 1.png" alt="Next.js Logo" />
+                <FaHtml5 size={36} aria-label="HTML5 Icon" />
+                <FaCss3Alt size={36} aria-label="CSS3 Icon" />
+                <FaReact size={36} aria-label="React Icon" />
+                <RiTailwindCssFill size={36} aria-label="Tailwind CSS Icon" />
+                <SiNextdotjs size={36} aria-label="Next.js Icon" />
               </div>
             </CardContent>
           </CardHeader>
@@ -44,8 +47,8 @@ export default function SkillsSection() {
             <CardContent className="text-slate-700 font-medium">
               <p>Technologies Used:</p>
               <div className="flex items-center gap-2 lg:my-4 my-2">
-                <img className="lg:w-12 lg:h-12 w-10 h-10" src="/assets/Nodejs.png" alt="Node.js Logo" />
-                <img className="lg:w-12 lg:h-12 w-10 h-10" src="/assets/Express js.png" alt="Express.js Logo" />
+                <FaNode size={36} aria-label="Node.js Icon" />
+                <SiExpress size={36} aria-label="Express.js Icon" />
               </div>
             </CardContent>
           </CardHeader>
@@ -61,7 +64,7 @@ export default function SkillsSection() {
             <CardContent className="text-slate-700 font-medium">
               <p>Technologies Used:</p>
               <div className="flex items-center gap-2 lg:my-4 my-2">
-                <img className="lg:w-12 lg:h-12 w-10 h-10" src="/assets/Figma.png" alt="Figma Logo" />
+                <FaFigma size={36} aria-label="Figma Icon" />
               </div>
             </CardContent>
           </CardHeader>
@@ -77,7 +80,7 @@ export default function SkillsSection() {
             <CardContent className="text-slate-700 font-medium">
               <p>Technologies Used:</p>
               <div className="flex items-center gap-2 lg:my-4 my-2">
-                <img className="lg:w-12 lg:h-12 w-10 h-10" src="/assets/Github.png" alt="GitHub Logo" />
+                <FaGithubAlt size={36} aria-label="GitHub Icon" />
               </div>
             </CardContent>
           </CardHeader>
